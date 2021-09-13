@@ -31,6 +31,7 @@ Dark gray: hsl(0, 0%, 59%)
 - Weights: 400, 700 */
 
 /* Universal */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
 *, *::after, *::before{
     box-sizing: border-box;
@@ -39,6 +40,7 @@ Dark gray: hsl(0, 0%, 59%)
 }
 
 /* Colours and font*/
+
 
 html{
 /* ### Primary */
@@ -51,7 +53,8 @@ html{
 
     --Darkgray: hsl(0, 0%, 59%);
 
-    font-size: 18px;
+    font-size: 16px;
+    font-family: "Kumbh Sans" ;
 }
 
 /* Fixing body */
@@ -70,8 +73,8 @@ body{
     background-color: white;
     margin: 25% auto;
     width: 375px;
-    height: 400px;
-    box-shadow: 1px 10px 50px 1px rgba(0, 0, 0, .7);
+    height: 440px;
+    box-shadow: 1px 10px 70px 0px rgba(0, 0, 0, .7);
     border-radius: 1rem;
 }
 
@@ -82,18 +85,46 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     border-top: 1px rgba(25, 25, 25, .5) solid;
+    padding: auto 20px;
 }
 
+span{
+    color: var(--Darkgray);
+    font-weight: 400;
+}
+
+p{
+    text-align: center;
+    color:var(--Darkgray);
+}
+
+.info{
+    height: 55%;
+}
+
+.pp{
+    border-radius: 50%;
+    background-color: #ddd;
+    width: fit-content;
+    display: flex;
+    margin: 25% auto 0;
+    padding:.25rem;
+}
+
+img{
+    border-radius: 50%;
+
+}
+
+/* Bottom stats */
 h2{
-    margin:1rem auto;
+    margin:1.5rem auto;
     text-align: center;
 }
 
 h2 p{
-    font-size: 1rem;
-    color:var(--Darkgray)
-}
-
-.info{
-    height: 75%;
+    font-size: .8rem;
+    letter-spacing: .1rem;
+    font-weight: 400;
+    padding: .5rem;
 }
