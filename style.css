@@ -1,0 +1,99 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%)
+
+## Typography
+
+### Body Copy
+
+- Font size (name and stats): 18px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700 */
+
+/* Universal */
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Colours and font*/
+
+html{
+/* ### Primary */
+
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+    --Darkgrayishblue: hsl(227, 10%, 46%);
+
+/* ### Neutral */
+
+    --Darkgray: hsl(0, 0%, 59%);
+
+    font-size: 18px;
+}
+
+/* Fixing body */
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/bg-pattern-bottom.svg);
+    background-image:180deg url(images/bg-pattern-top.svg);
+}
+
+/* Making the card */
+
+.container{
+    background-color: white;
+    margin: 25% auto;
+    width: 375px;
+    height: 400px;
+    box-shadow: 1px 10px 50px 1px rgba(0, 0, 0, .7);
+    border-radius: 1rem;
+}
+
+/* Positioning inside card */
+
+.stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-top: 1px rgba(25, 25, 25, .5) solid;
+}
+
+h2{
+    margin:1rem auto;
+    text-align: center;
+}
+
+h2 p{
+    font-size: 1rem;
+    color:var(--Darkgray)
+}
+
+.info{
+    height: 75%;
+}
