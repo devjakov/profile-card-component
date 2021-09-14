@@ -63,8 +63,29 @@ body{
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-image: url(images/bg-pattern-bottom.svg);
-    background-image:180deg url(images/bg-pattern-top.svg);
+    background-color: var(--Darkcyan);
+  
+}
+
+/* Making the background */
+.bgpattern{
+    position: absolute;
+}
+
+.bgpattern img:nth-child(1){
+    position: fixed;
+    float: left;
+    right: 50%;
+    top: -800px;
+    width: 1440px;
+}
+
+.bgpattern img:nth-child(2){
+    position: fixed;
+    float: right;
+    left: 50%;
+    bottom: -800px;
+    width: 1440px;
 }
 
 /* Making the card */
