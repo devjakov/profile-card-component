@@ -110,9 +110,9 @@ body{
     padding: auto 20px;
 }
 
-span{
-    color: var(--Darkgray);
-    font-weight: 400;
+.info span{
+display: inline-block;
+font-size: 1.33rem;
 }
 
 p{
@@ -137,6 +137,7 @@ p{
     z-index: 2;
     background-color: white;
     padding: .25rem;
+    margin: auto;
 }
 
 /* Bottom stats */
@@ -145,11 +146,13 @@ h2{
     text-align: center;
 }
 
-h2 p{
+h2 span{
     font-size: .8rem;
     letter-spacing: .1rem;
     font-weight: 400;
     padding: .5rem;
+    display: block;
+    color: var(--Darkgray);
 }
 
 /* bg pattern card */
