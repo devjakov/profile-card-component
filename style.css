@@ -106,7 +106,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    border-top: 1px rgba(25, 25, 25, .5) solid;
+    border-top: 1px rgba(25, 25, 25, .25) solid;
     padding: auto 20px;
 }
 
